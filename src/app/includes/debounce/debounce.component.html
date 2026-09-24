@@ -1,0 +1,124 @@
+<div class="container-fluid p-3">
+
+    <h1 class="mb-4">DebounceTime and distinctUntilChanged</h1>
+
+    <div class="row">
+
+        <!-- Ex - 01 -->
+        <div class="col-md-6">
+
+            <h6 class="fw-bold">
+                Ex - 01
+                <span class="text-primary">DebounceTime</span>
+            </h6>
+
+            <hr>
+
+            <div class="d-flex align-items-center">
+                <label for="search1" class="me-4">
+                    Search..
+                </label>
+
+                <input
+                    type="text"
+                    id="search1"
+                    class="form-control"
+                    placeholder="Search..."
+                    #search
+                >
+            </div>
+
+        </div>
+
+
+        <!-- Ex - 02 -->
+        <div class="col-md-6">
+
+            <h6 class="fw-bold">
+                Ex - 02
+                <span class="text-warning">DistinctUntilChanged</span>
+            </h6>
+
+            <hr>
+
+            <div class="d-flex align-items-center">
+                <label for="search2" class="me-4">
+                    Search..
+                </label>
+
+                <input
+                    type="text"
+                    id="search2"
+                    class="form-control"
+                    placeholder="angularrr"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid p-3">
+
+    <h1 class="mb-4">Async Subject</h1>
+
+    <h2 class="mb-5">Add Video</h2>
+
+    <hr>
+
+    <!-- Add Video -->
+    <div class="d-flex justify-content-center align-items-center gap-4 py-3">
+
+        <input
+            type="text"
+            class="form-control"
+            placeholder="sharma"
+            style="width: 220px;"
+            #video
+        >
+
+        <button class="btn btn-success" (click)="addVideo(video.value)">
+            Add Video
+        </button>
+
+    </div>
+
+    <hr>
+
+    <!-- User / Subscription -->
+    <div class="row mt-5">
+
+        <!-- User 01 -->
+        <div class="col-md-4">
+
+            <h6 class="fw-bold">User - 01</h6>
+
+            <hr>
+
+            <div class="border rounded p-3 bg-light">
+                <strong>Video :</strong>
+                <span>{{msg}}</span>
+            </div>
+
+        </div>
+
+
+        <!-- Complete Subscription -->
+        <div class="col-md-4">
+
+            <h6 class="fw-bold">Click to Complete</h6>
+
+            <hr>
+
+            <button class="btn btn-success" (click)="onComplete()">
+                Complete Subscription
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
