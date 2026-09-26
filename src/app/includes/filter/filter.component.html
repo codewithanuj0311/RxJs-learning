@@ -1,0 +1,152 @@
+<div class="container-fluid p-2">
+
+    <h1 class="mb-4">Filter</h1>
+
+    <div class="row">
+
+        <!-- Ex - 01 -->
+        <div class="col-md-4">
+
+            <h6 class="fw-bold">Ex - 01</h6>
+
+            <hr>
+
+            <div class="border rounded p-2 bg-light mb-3">
+                <strong>Filter :</strong> by length
+            </div>
+
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let item of source1">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!-- Ex - 02 -->
+        <div class="col-md-4">
+
+            <h6 class="fw-bold">Ex - 02</h6>
+
+            <hr>
+
+            <div class="border rounded p-2 bg-light mb-3">
+                <strong>Filter :</strong> by Gender
+            </div>
+
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Priyanka</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Janet</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Mounika</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Sanjana</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Neha</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Sakshi</td>
+                        <td>Female</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!-- Ex - 03 -->
+        <div class="col-md-4">
+
+            <h6 class="fw-bold">Ex - 03</h6>
+
+            <hr>
+
+            <div class="border rounded p-2 bg-light mb-3">
+                <strong>Filter :</strong> by nth Item
+            </div>
+
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Anup</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Priyanka</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ashish</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vivek</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Janet</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Mounika</td>
+                        <td>Female</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
